@@ -26,8 +26,8 @@ jobs:
     steps:
       - checkout
 
-      - run:  apt-get update; apt-get -y --no-install-recommends install git wget unzip libzip-dev; apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
-      - run: sudo docker-php-ext-install zip
+      - run: apt-get update; apt-get -y --no-install-recommends install git wget unzip libzip-dev; apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+      - run: docker-php-ext-install zip
 
       # Download and cache dependencies
       - restore_cache:
