@@ -1,0 +1,25 @@
+{
+    "name": "dzusmin/package-poc-package",
+    "description": "Provides a package to show how to work with packages",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Jasiński",
+            "email": "dzusmin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": { "Dzusmin\\POCPackage\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
