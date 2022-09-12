@@ -20,4 +20,13 @@ class ArrayReturningServiceTest extends TestCase
         $arrayToAssert = ['new data'];
         $this->assertSame($arrayToAssert, $newArray);
     }
+
+
+    /** @test */
+    public function it_should_return_one(): void
+    {
+        $subject = new ArrayReturningService();
+
+        $this->assertSame(1, $subject->returnInt());
+    }
 }
