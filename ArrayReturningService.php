@@ -14,6 +14,6 @@ class ArrayReturningService
 
     public function returnInt(): int
     {
-        return 1;
+        return 2;
     }
 }
