@@ -11,4 +11,9 @@ class ArrayReturningService
         $array[] = 'new data';
         return $array;
     }
+
+    public function returnInt(): int
+    {
+        return 1;
+    }
 }
