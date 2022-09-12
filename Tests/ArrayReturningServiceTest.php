@@ -27,6 +27,6 @@ class ArrayReturningServiceTest extends TestCase
     {
         $subject = new ArrayReturningService();
 
-        $this->assertSame(1, $subject->returnInt());
+        $this->assertSame(2, $subject->returnInt());
     }
 }
