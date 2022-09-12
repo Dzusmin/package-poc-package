@@ -17,6 +17,7 @@ class ArrayReturningServiceTest extends TestCase
 
         $newArray = $subject->returnArray($array);
 
-        $this->assertSame($array, $newArray);
+        $arrayToAssert = ['new data'];
+        $this->assertSame($arrayToAssert, $newArray);
     }
 }
