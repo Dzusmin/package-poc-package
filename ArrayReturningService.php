@@ -8,6 +8,7 @@ class ArrayReturningService
 {
     public function returnArray(array $array): array
     {
+        $array[] = 'new data';
         return $array;
     }
 }
